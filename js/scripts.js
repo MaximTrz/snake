@@ -9,8 +9,14 @@ window.onload = function (e) {
 
     var points = 0;
     
-    var wall = new Wall(matrix, [[3, 7], [4, 7], [5, 7], [6, 7]]);
-    wall.show();
+    (new Wall(matrix, [[4, 7], [5, 7], [6, 7], [7, 7]])).show();
+
+    (new Wall(matrix, [[4, 9], [5, 9], [6, 9], [7, 9]])).show();
+
+    (new Wall(matrix, [[9, 7], [10, 7], [11, 7], [12, 7]])).show();
+    
+    (new Wall(matrix, [[9, 9], [10, 9], [11, 9], [12, 9]])).show();
+
     
     var snake = new Snake(matrix, [[5, 5], [4, 5], [3, 5]], 'right');
     snake.show();
